@@ -11,3 +11,6 @@ dir.create(out)
 
 saveRDS(seaad, file = paste0(out, 'SEAAD_DLPFC.rds'))
 
+# 2. Edit the RDS Object in order to make cell_type labeling simpler ####
+
+unique(seaad@meta.data$cell_type)
